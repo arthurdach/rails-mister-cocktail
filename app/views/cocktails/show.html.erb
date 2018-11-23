@@ -12,12 +12,11 @@
         <li><p><%= dose.description %></p></li>
       </div>
       <% end %>
-      <button type="button" class="btn btn-danger"><%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail) %></button>
+      <p><%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail) %></p>
     </div>
   </ul>
 
   <img src=<%= asset_path 'cocktail4.jpg' %> alt="cocktail-picture" height="500" width="auto">
 
-  <p><%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail) %></p>
   <p><%= link_to "Back to cocktail list", cocktails_path %></p>
 </div>
